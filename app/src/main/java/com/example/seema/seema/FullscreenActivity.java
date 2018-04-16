@@ -9,6 +9,8 @@ import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.parse.ParseUser;
+
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
@@ -102,8 +104,16 @@ public class FullscreenActivity extends AppCompatActivity {
                 toggle();
             }
         });
+        ParseUser currentUser = ParseUser.getCurrentUser();
 
-        startActivity(new Intent(this,LoginActivity.class));
+        if (currentUser != null) {
+            // do stuff with the user
+            startActivity(new Intent(this,LoginActivity.class));
+        } else {
+            startActivity(new Intent(this,MainActivity.class));
+            // show the signup or login screen
+        }
+        //
 
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away

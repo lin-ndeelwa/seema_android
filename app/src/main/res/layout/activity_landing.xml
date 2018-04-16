@@ -11,23 +11,28 @@
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_margin="30dp"
+        android:id="@+id/buttons"
         android:layout_marginTop="70dp"
         android:layout_height="wrap_content">
         <Button
             android:layout_width="match_parent"
+            android:id="@+id/fan"
             android:layout_height="wrap_content"
             android:text="FAN"/>
         <Button
             android:layout_width="match_parent"
+            android:id="@+id/artist"
             android:layout_height="wrap_content"
             android:text="Artist"/>
         <Button
             android:layout_width="match_parent"
+            android:id="@+id/organiser"
             android:layout_height="wrap_content"
             android:text="Event Organiser"/>
     </LinearLayout>
     <ScrollView
-        android:id="@+id/login_form"
+        android:id="@+id/signup_form"
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
