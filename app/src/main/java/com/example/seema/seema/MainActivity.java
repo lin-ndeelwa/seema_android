@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -116,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
             public TextView dateView;
             public TextView venueView;
             public TextView fee;
+            public ImageView poster;
 
             public ViewHolder(View v) {
                 super(v);
@@ -123,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
                 venueView = v.findViewById(R.id.venue);
                 mTextView = v.findViewById(R.id.event_name);
                 fee = v.findViewById(R.id.fee);
+                poster = v.findViewById(R.id.poster);
 
             }
         }

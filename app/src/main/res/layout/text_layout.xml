@@ -20,6 +20,10 @@
             android:layout_marginTop="60dp"
             android:orientation="vertical"
             >
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/poster"
+                android:layout_height="wrap_content" />
             <TextView
                 android:id="@+id/event_name"
                 android:textSize="24sp"
